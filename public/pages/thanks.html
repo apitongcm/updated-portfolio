@@ -7,6 +7,7 @@
     <title>Thank you page</title>
     <link rel="icon" href="../src/main-icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -30,11 +31,16 @@
                         <i class="fab fa-github fa-2x"></i>
                     </a>
                 </div>
-                    <p><button class="card-button" id="backToPortfolio">Back to my website.</button></p>
+                    <p><button class="card-button" id="Portfolio">Back to my website.</button></p>
             </div>
         </div>
     </div>
-    <script src="../main.js"></script>
     <script src="https://kit.fontawesome.com/2cbd9951c0.js" crossorigin="anonymous"></script>
+    <script>
+         $('#Portfolio').click(function(){
+          window.location.href="https://apitongcarl.netlify.app/index.html";
+      })
+    </script>
+
 </body>
 </html>

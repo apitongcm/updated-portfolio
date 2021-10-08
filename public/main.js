@@ -48,9 +48,6 @@ $(document).ready(function(){
       $('#view3').click(function(){
           window.location.href="https://tipcalculate.netlify.app/";
       })
-      $('#backToPortfolio').click(function(){
-          window.location.href="https://apitongcarl.netlify.app/";
-      })
   })
 
   
