@@ -481,6 +481,7 @@ img
     .jumbotron p
     {
         font-size:1.7rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .carousel-inner .carousel-item img, .col-sm-12 .carousel-item img
