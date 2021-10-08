@@ -43,7 +43,7 @@
 
 
     <!-- LANDING PAGE -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="jumbotron" id="landing">
             <div class="text">
                 <h1>Hi! I'm <span style="color:orangered;">Carl</span><br>Apitong</h1>
@@ -64,7 +64,7 @@
            <div class="col-sm-8">
                 <p>GLAD YOU'RE HERE! To introduce myself, I am Carl Marwin J. Apitong. <b>Aspiring Software & Game Developer</b>. A graduate of <b>Electronics Engineering and licensed Electronic Technician.</b> A self-taught developer with solid fundamentals in <b>Vanilla Javascript, C#, and Kotlin.</b> I had experienced being a freelance Arduino programmer and consultant for the research of stem students.</p>
                 <p>I am passionate when it comes to crafting or building something from scratch. Especially, in computers, electronics, and software. Curious mind, loves to explore new technology and is willing to learn further.</p>
-                <p><button class="card-button">Download CV</button></p>
+                <p><button class="card-button" id="download">Download CV</button></p>
             </div>
            <div class="col-sm-4" id="graduate">
                 
@@ -99,7 +99,7 @@
                                 <i class="fab fa-github fa-2x"></i>
                             </a>
                         </div>
-                            <p><button class="card-button">Contact</button></p>
+                            <p><button class="card-button" id="card-contact">Contact</button></p>
                     </div>
                  </div> 
              </div>
@@ -342,7 +342,7 @@
                 <div class="card-header"><i class="fas fa-quote-left"></i></div>
                 <div class="card-content"><img src="./src/feedback1.jpg" alt="feedback1" width="100%"></div>
                 <div class="card-footer">
-                    <h2>Maegan</h2>
+                    <h2>--Maegan</h2>
                     <p>STEM-Student</p>
                 </div>
             </div>
@@ -352,7 +352,7 @@
                 <div class="card-header"><i class="fas fa-quote-left"></i></div>
                 <div class="card-content"><img src="./src/feedback2.jpg" alt="feedback2" width="100%"></div>
                 <div class="card-footer">
-                    <h2>Lorenaiza</h2>
+                    <h2>--Lorenaiza</h2>
                     <p>STEM-Student</p>
                 </div>
             </div>
@@ -362,7 +362,7 @@
                 <div class="card-header"><i class="fas fa-quote-left"></i></div>
                 <div class="card-content"><img src="./src/feedback3.jpg" alt="feedback3" width="100%"></div>
                 <div class="card-footer">
-                    <h2>Kristine</h2>
+                    <h2>--Kristine</h2>
                     <p>STEM-Student</p>
                 </div>
             </div>
@@ -460,6 +460,17 @@
        </div>
     </div>
 </div>
+<div class="min-space"></div>
+<!-- github -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="github">
+            <a href="https://github.com/apitongcm"><img src="./src/git.PNG" alt="git" width="100%"></a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="space"></div>
 <!-- SECTION:CONTACT -->
 <div class="container-fluid bg-contact" id="contact">
@@ -477,21 +488,35 @@
             </div>
        </div>
        <div class="col-sm-8">
-           <form>
-               <div class="row">
+           <form class="need-validation" novalidate action="https://formsubmit.co/apitongcmdev@gmail.com" method="POST">
+                <div class="form-group">
+                    <input type="hidden" name="_subject" value="ALERT:Message From your Web Portfolio">
+                </div>
+                <div class="row">
                  <div class="col">
-                     <label for="name">Name:</label>
-                   <input type="text" class="form-control" placeholder="Enter your Name" id="name" required>
+                     <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="Enter your Name" id="name" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please fill out this area</div>
+                     </div>
                  </div>
                  <div class="col">
-                   <label for="email">Email:</label>
-                   <input type="email" class="form-control" placeholder="Email your Email" id="email" required>
+                     <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Email your Email" id="email" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please fill out this area</div>
+                    </div>                   
                  </div> 
                </div>
                <div class="form-group">
-                   <label for="exampleFormControlTextarea1">Comment:</label>
-                   <input class="form-control" id="message" name="message" placeholder="Write your message here" required></input>
-                 </div>
+                   <label for="message">Comment:</label>
+                   <input type="text" class="form-control" id="message" name="message" placeholder="Write your message here" required></input>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="_next" value="https://apitongcarl.netlify.app/pages/thanks.html">
+                </div>
                  <button type="submit" id="button" class="btn btn-block btn-danger">Send</button>
              </form>
        </div>

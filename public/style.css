@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@900&display=swap');
-/* 
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace; */
 
 img
 {
@@ -30,6 +26,11 @@ img
     font-family: 'Luckiest Guy', cursive;
 }
 
+.navbar li
+{
+    margin-right:10px;
+}
+
 .navbar li a, .navbar .navbar-brand{
     color:#ffffff !important;
 }
@@ -41,11 +42,6 @@ img
 .navbar-default .navbar-toggle{
     border-color: transparent;
     color:#fff !important;
-}
-
-.navbar-brand img
-{
-    width:10px;
 }
 
 /* JUMBOTRON */
@@ -356,8 +352,10 @@ img
   {
       font-family: Arial, Helvetica, sans-serif;
       line-height:30px;
-      font-size:2rem;
+      font-size:1.3rem;
       font-weight:bold;
+      color:rgb(192, 156, 156);
+      text-shadow: 1px 1px rgb(0, 0, 0);
   }
 
   form
@@ -402,6 +400,10 @@ img
        overflow-x: hidden;
    }
 
+   #contact .card-contact
+   {
+       width:100%;
+   }
 
 }
 
@@ -469,6 +471,56 @@ img
         display: none;
         visibility: hidden;
     }
+
+    #contact .card-contact 
+    {
+        height:650px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    form
+    {
+        padding:30px;
+    }
+  
+    form label
+    {
+       font-family: "Roboto",sans-serif;
+       font-size:1.3rem;
+    }
+  
+    form #message
+    {
+        padding:20px 0;
+    }
+  
+    form #button
+    {
+        padding:10px;
+        font-size:15px;
+    }
+
+    .card-contact .col-sm-4
+  {
+      border-radius:2rem;
+  }
+
+  #contact .heading-title h1
+  {
+      color:rgb(255, 158, 123);
+      padding-top:50px;
+  }
+
+  #contact p
+  {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:20px;
+      font-size:2rem;
+      color:rgb(255, 255, 255);
+      text-shadow: 1px 1px rgb(0, 0, 0);
+      text-align: center;
+  }
+
 
    
 }

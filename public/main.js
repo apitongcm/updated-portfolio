@@ -24,6 +24,12 @@ $(document).ready(function(){
           }
       });
 
+      $('#download').click(function(){
+        window.location.href="./src/Apitong- Carl-CV.pdf";
+      })
+      $('#card-contact').click(function(){
+        window.location.href="#contact";
+      })
       $('#viewc2').click(function(){
           window.location.href="https://github.com/apitongcm/CV-Portfolio";
       })
