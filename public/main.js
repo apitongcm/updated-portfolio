@@ -48,6 +48,12 @@ $(document).ready(function(){
       $('#view3').click(function(){
           window.location.href="https://tipcalculate.netlify.app/";
       })
+      $('#viewc4').click(function(){
+          window.location.href="https://github.com/apitongcm/Javascript-lab/tree/master/Search";
+      })
+      $('#view4').click(function(){
+          window.location.href="https://rengyucart.netlify.app/";
+      })
   })
 
   
